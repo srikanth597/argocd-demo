@@ -8,7 +8,7 @@ spec:
   source:
       repoURL: 'https://github.com/srikanth597/argocd-demo.git'
       path: overlays
-      targetRevision: main
+      targetRevision: master
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
