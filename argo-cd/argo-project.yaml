@@ -7,7 +7,11 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/srikanth597/argocd-demo.git'
-    path: manifests
+    path: my-chart
+    helm:
+      releaseName: nginx
+      values: |
+        replicaCount: 1
     targetRevision: master
   destination:
     server: 'https://kubernetes.default.svc' 
